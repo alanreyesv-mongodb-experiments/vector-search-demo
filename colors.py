@@ -177,8 +177,8 @@ colors = [
 
 search_color = (
     int(sys.argv[1]) if len(sys.argv) > 1 else random.randint(0, 255),
-    int(sys.argv[2]) if len(sys.argv) > 1 else random.randint(0, 255),
-    int(sys.argv[3]) if len(sys.argv) > 1 else random.randint(0, 255),
+    int(sys.argv[2]) if len(sys.argv) > 2 else random.randint(0, 255),
+    int(sys.argv[3]) if len(sys.argv) > 3 else random.randint(0, 255),
 )
 
 search_rgb = to_normalized_rgb(search_color)
